@@ -1,6 +1,4 @@
-﻿using ExchangeScrapper.Common.IoCExtensions;
-
-var configuration = new ConfigurationBuilder()
+﻿var configuration = new ConfigurationBuilder()
     .AddJsonFile("appsettings.json", false)
     .AddEnvironmentVariables()
     .Build();

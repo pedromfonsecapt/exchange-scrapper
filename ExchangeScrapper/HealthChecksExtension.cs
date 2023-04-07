@@ -1,6 +1,4 @@
-﻿using ExchangeScrapper.KrakenConnector.Configuration;
-
-namespace ExchangeScrapper;
+﻿namespace ExchangeScrapper;
 
 public static class HealthChecksExtension
 {

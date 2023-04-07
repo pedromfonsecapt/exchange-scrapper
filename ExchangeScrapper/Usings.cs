@@ -14,3 +14,5 @@ global using ExchangeScrapper;
 global using ExchangeScrapper.Core.IocExtensions;
 global using ExchangeScrapper.Domain.Services.IocExtensions;
 global using Microsoft.FeatureManagement;
+global using ExchangeScrapper.Common.IoCExtensions;
+global using ExchangeScrapper.KrakenConnector.Configuration;

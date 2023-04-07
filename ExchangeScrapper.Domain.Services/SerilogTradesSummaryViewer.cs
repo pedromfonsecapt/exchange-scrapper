@@ -11,6 +11,6 @@ public class SerilogTradesSummaryViewer : ITradesSummaryViewer
 
     public void View(TradeSummary summary)
     {
-        _logger.LogInformation("Trade Summary for last hour: {@summary}", summary);
+        _logger.LogInformation("Trade Summary: {@summary}", summary);
     }
 }
