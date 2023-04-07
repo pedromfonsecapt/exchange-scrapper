@@ -1,0 +1,10 @@
+global using Microsoft.Extensions.Logging;
+global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.Extensions.Configuration;
+global using ExchangeScrapper.Core.Configuration;
+global using ExchangeScrapper.Interfaces.TradesSummaryUseCase;
+global using ExchangeScrapper.Domain;
+global using ExchangeScrapper.Interfaces.Core;
+global using ExchangeScrapper.Core.Jobs;
+global using ExchangeScrapper.Core.UseCases;
+global using ExchangeScrapper.Domain.Enum;

@@ -1,0 +1,11 @@
+global using ExchangeScrapper.Domain;
+global using ExchangeScrapper.Domain.Enum;
+global using ExchangeScrapper.Interfaces.TradesSummaryUseCase;
+global using ExchangeScrapper.Common.Extensions;
+global using ExchangeScrapper.Common.DelegatingHandlers;
+global using ExchangeScrapper.Common.RetryPolicies;
+global using ExchangeScrapper.KrakenConnector.Configuration;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
+global using ExchangeScrapper.KrakenConnector.Contracts;
+global using ExchangeScrapper.KrakenConnector.Extensions;

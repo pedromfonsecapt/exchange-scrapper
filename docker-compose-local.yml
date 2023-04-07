@@ -1,0 +1,7 @@
+version: '3.7'
+services:
+  exchange-scrapper:
+    container_name: exchange-scrapper
+    hostname: exchange-scrapper
+    image: exchange-scrapper:local
+    restart: always

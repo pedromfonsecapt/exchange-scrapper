@@ -1,0 +1,11 @@
+global using NUnit.Framework;
+global using ExchangeScrapper.Core.UseCases;
+global using ExchangeScrapper.Domain;
+global using Moq;
+global using ExchangeScrapper.Core.Jobs;
+global using Microsoft.Extensions.Logging;
+global using ExchangeScrapper.Core.Configuration;
+global using ExchangeScrapper.Interfaces.Core;
+global using ExchangeScrapper.Interfaces.TradesSummaryUseCase;
+global using ExchangeScrapper.Domain.Enum;
+global using Range = Moq.Range;

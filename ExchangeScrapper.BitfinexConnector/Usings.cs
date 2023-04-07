@@ -1,0 +1,10 @@
+global using Microsoft.Extensions.DependencyInjection;
+global using ExchangeScrapper.BitfinexConnector.Configuration;
+global using Microsoft.Extensions.Configuration;
+global using ExchangeScrapper.BitfinexConnector.Extensions;
+global using ExchangeScrapper.Common.Extensions;
+global using ExchangeScrapper.Domain;
+global using ExchangeScrapper.Domain.Enum;
+global using ExchangeScrapper.Interfaces.TradesSummaryUseCase;
+global using ExchangeScrapper.Common.DelegatingHandlers;
+global using ExchangeScrapper.Common.RetryPolicies;

@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "ExchangeScrapper": {
+      "commandName": "Project",
+      "environmentVariables": {
+      }
+    }
+  }
+}
