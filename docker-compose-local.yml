@@ -5,3 +5,6 @@ services:
     hostname: exchange-scrapper
     image: exchange-scrapper:local
     restart: always
+    environment:
+      - FeatureManagement__KrakenConnector=false
+      - Jobs__TradesSummaryJobPeriodSeconds=10
