@@ -19,9 +19,8 @@ public class BitfinexConnector : ITradesCollector
     // Check https://docs.bitfinex.com/reference/rest-public-trades
     public async Task<IEnumerable<Trade>> CollectLastTrades(TradeEnum trade, DateTimeOffset since, CancellationToken ct)
     {
-        var nowEpoch = DateTimeOffset.UtcNow.GetMillisecondEpochTimestamp();
         var sinceEpoch = since.GetMillisecondEpochTimestamp();
-        var path = $"{_configuration.Url}{VersionPath}{TradesPath}/{trade.ToBitfinexString()}{HistoryPath}?start={sinceEpoch}&end={nowEpoch}&limit={Limit}";
+        var path = $"{_configuration.Url}{VersionPath}{TradesPath}/{trade.ToBitfinexString()}{HistoryPath}?start={sinceEpoch}&limit={Limit}";
         var trades = await _client.ExecuteHttpRequest<IEnumerable<IEnumerable<double>>>(path, ct);
         return trades.Select(x => new Trade
         {
